@@ -2,6 +2,7 @@
     "name": "lamine-minato/orange-money-gateway",
     "description": "A PHP package to manage payments via Orange Money in your PHP applications.",
     "license": "MIT",
+    "keywords": ["payment", "orange money", "api"],
     "autoload": {
         "psr-4": {
             "LamineMinato\\OrangeMoneyGateway\\": "src/"
@@ -13,6 +14,7 @@
             "email": "laminecoder@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "symfony/http-client": "^7.0",
         "symfony/property-access": "^7.0"
