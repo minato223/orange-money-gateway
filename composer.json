@@ -15,7 +15,6 @@
             "email": "laminecoder@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "symfony/http-client": "^7.0",
         "symfony/property-access": "^7.0"
