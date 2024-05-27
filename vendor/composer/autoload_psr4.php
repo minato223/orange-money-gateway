@@ -19,5 +19,5 @@ return array(
     'Symfony\\Component\\HttpClient\\' => array($vendorDir . '/symfony/http-client'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
-    'Lamine\\OrangeMoneyGateway\\' => array($baseDir . '/src'),
+    'LamineMinato\\OrangeMoneyGateway\\' => array($baseDir . '/src'),
 );

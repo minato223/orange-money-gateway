@@ -1,6 +1,6 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Infrastructure\OrangeMoney;
+namespace LamineMinato\OrangeMoneyGateway\Infrastructure\OrangeMoney;
 
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\ResponseInterface;

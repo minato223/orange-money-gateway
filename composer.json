@@ -1,10 +1,10 @@
 {
-    "name": "lamine/orange-money-gateway",
+    "name": "lamine-minato/orange-money-gateway",
     "description": "A PHP package to manage payments via Orange Money in your PHP applications.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lamine\\OrangeMoneyGateway\\": "src/"
+            "LamineMinato\\OrangeMoneyGateway\\": "src/"
         }
     },
     "authors": [

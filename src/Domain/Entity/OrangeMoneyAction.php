@@ -1,6 +1,6 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Domain\Entity;
+namespace LamineMinato\OrangeMoneyGateway\Domain\Entity;
 
 class OrangeMoneyAction
 {

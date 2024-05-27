@@ -1,8 +1,8 @@
 <?php
 
-use Lamine\OrangeMoneyGateway\Application\OrangeMoneyGateway;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyCurrency;
+use LamineMinato\OrangeMoneyGateway\Application\OrangeMoneyGateway;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyCurrency;
 
 require __DIR__.'/vendor/autoload.php';
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Domain;
+namespace LamineMinato\OrangeMoneyGateway\Domain;
 
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyPaymentResponse;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyPaymentResponse;
 
 interface OrangeMoneyGatewayInterface
 {

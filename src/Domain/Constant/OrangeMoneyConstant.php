@@ -1,8 +1,8 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Domain\Constant;
+namespace LamineMinato\OrangeMoneyGateway\Domain\Constant;
 
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
 
 class OrangeMoneyConstant
 {

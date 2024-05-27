@@ -38,7 +38,7 @@ class ComposerStaticInit2ca80d2876ed4ec303ff25adbcf01e47
         ),
         'L' => 
         array (
-            'Lamine\\OrangeMoneyGateway\\' => 26,
+            'LamineMinato\\OrangeMoneyGateway\\' => 32,
         ),
     );
 
@@ -95,7 +95,7 @@ class ComposerStaticInit2ca80d2876ed4ec303ff25adbcf01e47
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Lamine\\OrangeMoneyGateway\\' => 
+        'LamineMinato\\OrangeMoneyGateway\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

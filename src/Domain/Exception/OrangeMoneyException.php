@@ -1,6 +1,6 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Domain\Exception;
+namespace LamineMinato\OrangeMoneyGateway\Domain\Exception;
 
 use Exception;
 

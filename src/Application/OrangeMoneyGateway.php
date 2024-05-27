@@ -1,14 +1,14 @@
 <?php
 
-namespace Lamine\OrangeMoneyGateway\Application;
+namespace LamineMinato\OrangeMoneyGateway\Application;
 
-use Lamine\OrangeMoneyGateway\Domain\Constant\OrangeMoneyConstant;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
-use Lamine\OrangeMoneyGateway\Domain\Exception\OrangeMoneyException;
-use Lamine\OrangeMoneyGateway\Domain\Entity\OrangeMoneyPaymentResponse;
-use Lamine\OrangeMoneyGateway\Domain\OrangeMoneyGatewayInterface;
-use Lamine\OrangeMoneyGateway\Infrastructure\OrangeMoney\OrangeMoneyHttpClient;
+use LamineMinato\OrangeMoneyGateway\Domain\Constant\OrangeMoneyConstant;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
+use LamineMinato\OrangeMoneyGateway\Domain\Exception\OrangeMoneyException;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyPaymentResponse;
+use LamineMinato\OrangeMoneyGateway\Domain\OrangeMoneyGatewayInterface;
+use LamineMinato\OrangeMoneyGateway\Infrastructure\OrangeMoney\OrangeMoneyHttpClient;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
 
 class OrangeMoneyGateway implements OrangeMoneyGatewayInterface
