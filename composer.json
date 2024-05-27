@@ -1,6 +1,7 @@
 {
     "name": "lamine-minato/orange-money-gateway",
     "description": "A PHP package to manage payments via Orange Money in your PHP applications.",
+    "version": "1.0.0",
     "license": "MIT",
     "keywords": ["payment", "orange money", "api"],
     "autoload": {
