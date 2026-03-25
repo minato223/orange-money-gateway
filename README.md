@@ -43,8 +43,49 @@ $config = new OrangeMoneyConfig(
     proccessUrl: "https://api.orange.com/orange-money-webpay/ml/v1/webpayment",
 )
 
+```php
 $response = OrangeMoneyGateway::execute($action, $config);
 ```
+
+### Handling Webhooks (Notifications)
+
+When a payment is processed, Orange Money sends a notification to your `notifUrl`. You can use the `handleWebhook` method to process this notification.
+
+```php
+#[Route('/payment/notif', name: 'payment_notification', methods: ['POST'])]
+public function paymentNotification(Request $request): JsonResponse
+{
+    $payload = $request->toArray();
+    $webhookResponse = OrangeMoneyGateway::handleWebhook($payload);
+
+    if ($webhookResponse->isSuccess()) {
+        // Update your order status to PAID
+        // $webhookResponse->getNotifToken()
+        // $webhookResponse->getTransactionId()
+    } elseif ($webhookResponse->isFailed()) {
+        // Update your order status to FAILED
+    }
+
+    return new JsonResponse(['status' => 'ok']);
+}
+```
+
+> [!TIP]
+> Pour une intégration plus détaillée dans Symfony (services, sécurité, etc.), consultez le [Guide d'intégration Symfony](docs/symfony_integration.md).
+
+```php
+$json = file_get_contents('php://input');
+$payload = json_decode($json, true);
+
+$webhookResponse = OrangeMoneyGateway::handleWebhook($payload);
+
+if ($webhookResponse->isSuccess()) {
+    // Success logic
+}
+```
+
+> [!TIP]
+> Pour une intégration plus détaillée en PHP pur (autoload, script complet, etc.), consultez le [Guide d'intégration Pure PHP](docs/pure_php_integration.md).
 
 ## License
 

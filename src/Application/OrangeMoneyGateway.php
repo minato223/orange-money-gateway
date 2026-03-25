@@ -7,6 +7,7 @@ use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyAction;
 use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyConfig;
 use LamineMinato\OrangeMoneyGateway\Domain\Exception\OrangeMoneyException;
 use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyPaymentResponse;
+use LamineMinato\OrangeMoneyGateway\Domain\Entity\OrangeMoneyWebhookResponse;
 use LamineMinato\OrangeMoneyGateway\Domain\OrangeMoneyGatewayInterface;
 use LamineMinato\OrangeMoneyGateway\Infrastructure\OrangeMoney\OrangeMoneyHttpClient;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
@@ -46,5 +47,11 @@ class OrangeMoneyGateway implements OrangeMoneyGatewayInterface
             throw new OrangeMoneyException($message, $description);
         }
         return new OrangeMoneyPaymentResponse($urlResponse['notif_token'], $urlResponse['payment_url']);
+    }
+
+    public static function handleWebhook(array $payload): OrangeMoneyWebhookResponse
+    {
+        $handler = new OrangeMoneyWebhookHandler();
+        return $handler->handle($payload);
     }
 }
